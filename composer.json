@@ -1,0 +1,25 @@
+{
+  "name": "magium/magento2-configuration-manager-bridge",
+  "description": "Injects Magium Configuration Manager settings into the Magento 2 Store Configuration section",
+  "minimum-stability": "stable",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Kevin Schroeder",
+      "email": "kschroeder@magiumlib.com"
+    }
+  ],
+  "require": {
+    "magento/framework": "^100",
+    "magium/configuration-manager": "^0.8.32",
+    "magento/module-config": "^100"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magium\\McmM2Bridge\\": "src"
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
